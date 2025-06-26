@@ -22,6 +22,15 @@ function App() {
         </a>
       </header>
     </div>
+
+    /*<div className="flex flex-col items-center justify-center min-h-screen bg-blue-100">
+      <h1 className="text-3xl font-bold underline text-blue-700 mb-4">
+        Tailwind CSS is Working!
+      </h1>
+      <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        Test Button
+      </button>
+    </div>*/
     
   );
 }
