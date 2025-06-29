@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeCard({ product, onAdd }) {
   return (
-    <div className="bg-white rounded-lg shadow hover:shadow-lg transition-all">
+    <div className="bg-white rounded-lg shadow shadow hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fadeIn">
       <img src={product.image} alt={product.name} className="h-40 w-full object-cover rounded-t-lg" />
       <div className="p-4">
         <h3 className="font-semibold text-lg">{product.name}</h3>

@@ -12,7 +12,7 @@ function Contact() {
           Send Message
         </button>
       </form>
-      <p className="mt-4 text-gray-500">Or email us at <a href="mailto:support@foodie.com" className="text-pink-600">support@foodie.com</a></p>
+      <p className="mt-4 text-gray-500">Or email us at <a href="mailto:support@feastly.com" className="text-pink-600">support@feastly.com</a></p>
     </div>
   );
 }
