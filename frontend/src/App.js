@@ -8,6 +8,7 @@ import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import OrderSummary from "./pages/OrderSummary";
 import NewProduct from "./pages/NewProduct";
 import { useSelector } from "react-redux";
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/order/:id" element={<OrderSummary />} />
           <Route path="/new-product" element={
             <PrivateRoute adminOnly>
               <NewProduct />

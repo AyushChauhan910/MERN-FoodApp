@@ -2,10 +2,14 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CartProduct from "../components/CartProduct";
 import { removeFromCart, increaseQty, decreaseQty, clearCart } from "../redux/productSlice";
+import { useNavigate } from "react-router-dom";
+import api from "../utility/api";
+
 
 function Cart() {
   const cart = useSelector((state) => state.product.cart);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
@@ -37,9 +41,24 @@ function Cart() {
       </div>
       <button
         className="w-full mt-4 bg-pink-600 text-white py-2 rounded hover:bg-pink-700"
-        onClick={() => {
-          alert("Order placed! (Checkout logic to be implemented)");
-          dispatch(clearCart());
+        onClick={async () => {
+          try {
+            const orderItems = cart.map(item => ({
+              product: item._id,
+              name: item.name,
+              qty: item.qty,
+              price: item.price,
+              image: item.image,
+            }));
+            const res = await api.post("/api/v1/orders", {
+              orderItems,
+              totalPrice: total,
+            });
+            dispatch(clearCart());
+            navigate(`/order/${res.data._id}`);
+          } catch (err) {
+            alert("Failed to place order");
+          }
         }}
       >
         Place Order
