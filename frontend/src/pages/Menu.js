@@ -25,7 +25,7 @@ function Menu() {
 
   return (
     <div>
-      <h2 className="text-2xl  text-pink-600 font-semibold mb-4">Our Menu</h2>
+      <h2 className="text-2xl  text-pink-600 font-bold mb-4">Our Menu</h2>
       <FilterProduct categories={categories} selected={category} onSelect={setCategory} />
       {loading ? (
         <div className="text-pink-200">Loading...</div>

@@ -21,7 +21,7 @@ function Home() {
         <h1 className="text-4xl font-bold text-pink-600 mb-2">Welcome to Feastly!</h1>
         <p className="text-pink-200 mb-4">Delicious food delivered to your door.</p>
       </section>
-      <h2 className="text-2xl text-pink-600 font-semibold mb-4">Featured</h2>
+      <h2 className="text-2xl text-pink-600 font-bold mb-4">Featured</h2>
       {loading ? (
         <div className="text-pink-200">Loading...</div>
       ) : (
