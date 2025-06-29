@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className="bg-fuchsia-200 shadow sticky top-0 z-50">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link to="/" className="text-2xl font-bold text-pink-600">Feastly</Link>
+        <Link to="/" className="text-2xl font-bold text-pink-600">Feastly </Link>
         <div className="flex items-center gap-4">
           <Link to="/menu" className="hover:text-pink-600 text-gray-800 font-medium" >Menu</Link>
           <Link to="/about" className="hover:text-pink-600  text-gray-800 font-medium">About</Link>
