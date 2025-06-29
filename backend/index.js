@@ -20,4 +20,6 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.get('/', (_, res) => res.send('API is running'));
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 5000, () => 
+  console.log(`Server running on port ${process.env.PORT || 5000}`)
+);
