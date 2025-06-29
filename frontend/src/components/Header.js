@@ -27,7 +27,7 @@ function Header() {
           )}
         </div>
         <div className="flex items-center gap-4">
-          <Link to="/cart" className="relative">
+          <Link to="/cart" className="animate-bounce relative">
             <svg className="w-6 h-6  text-gray-800 " fill="none" stroke="currentColor" strokeWidth="2"
               viewBox="0 0 24 24">
               <path d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
