@@ -124,17 +124,6 @@ PORT=5000
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
----
-
-## 📸 Screenshots
-
-> _Add screenshots of your app here to showcase the UI!_
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
