@@ -35,6 +35,9 @@ A modern, full-stack food ordering application built with the MERN stack (MongoD
 
 ---
 
+## Live Link - 
+https://mern-food-app-mu.vercel.app/
+
 ## 📁 Folder Structure
 
 ```
